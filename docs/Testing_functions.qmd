@@ -6,7 +6,7 @@ editor: visual
 
 execute: 
   warning: false
-  echo: false
+  echo: true
 ---
 
 ## Write a function and Test the code
@@ -32,4 +32,14 @@ expect_true(mean_range(faithful)[1] <= mean_range(faithful)[2] )
 mean_range(mtcars)
 mean_range(faithful)
 
+```
+
+```{r}
+source(here::here("src", "name_cart.R"))
+name_cart("sushi", "panda")
+```
+
+```{r}
+source(here::here("src", "cork_oak_growth.R"))
+height_t2(4,2,19)
 ```
